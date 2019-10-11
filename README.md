@@ -12,7 +12,7 @@
 <!-- Apresentar o tema. -->
 ### 1. Tema
 
-  O trabalho final tem como tema o desenvolvimento de um site que visa 
+  O trabalho final tem como tema o desenvolvimento de um site que visa fazer o controle de um campeonato de futebol.
 
 <!-- Descrever e limitar o escopo da aplicação. -->
 ### 2. Escopo
