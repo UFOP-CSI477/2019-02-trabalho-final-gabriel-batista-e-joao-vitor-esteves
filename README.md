@@ -1,5 +1,5 @@
 # **CSI477-2019-02 - Proposta de Trabalho Final**
-## *Grupo: Princesa Leia & Luke Skywalker*
+## *Grupo: Gabriel Batista e João Vitor Esteves*
 
 --------------
 
@@ -7,12 +7,12 @@
 
 ### Resumo
 
-  O objetivo deste documento é apresentar uma proposta para o trabalho a ser desenvolvido na disciplina CSI477 -- Sistemas WEB I. É uma breve descrição sobre o tema que será abordado, bem como o escopo, as restrições e demais questões pertinentes ao contexto. (**modifique este texto conforme o contexto do seu trabalho :D**)
+  O objetivo deste documento é apresentar uma proposta para o trabalho a ser desenvolvido na disciplina CSI477 -- Sistemas WEB I. Será abordado uma plataforma web que tem a finalidade de realizar o gerenciamento de campeonato de futebol(estatísticas dos jogadores e dos times, informações sobre os jogos e do campeonato em geral.
 
 <!-- Apresentar o tema. -->
 ### 1. Tema
 
-  O trabalho final tem como tema o desenvolvimento de ...
+  O trabalho final tem como tema o desenvolvimento de um site que visa 
 
 <!-- Descrever e limitar o escopo da aplicação. -->
 ### 2. Escopo
