@@ -16,13 +16,16 @@
 
 <!-- Descrever e limitar o escopo da aplicação. -->
 ### 2. Escopo
-
-  Este projeto terá as seguintes funcionalidades...
+  
+  Cadastro e login dos administradores dos times e campeonatos;	
+  Cadastro e atualizações dos jogadores e dos times;
+  Cadastro de campeonatos;
+  Buscas por jogadores, times e estatísticas.
 
 <!-- Apresentar restrições de funcionalidades e de escopo. -->
 ### 3. Restrições
 
-  Neste trabalho não serão considerados ...
+  Neste trabalho não serão considerados outros bancos de dados além do banco de dados da própria plataforma web.
 
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
