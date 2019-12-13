@@ -80,11 +80,17 @@ class SumulaController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function update(Request $request, Sumula $sumula)
+    public function update(Request $request, $id)
     {
-        $sum = Sumula::findOrFail($sumula->id);
+        $sum = Sumula::findOrFail($id);
         dd($sum);
-        delete($sum);
+        $sum->placar = $request->placar;
+        $sum->melhor = $request->melhor;
+        $sum->faltas = $request->faltas;
+        $sum->impedimentos = $request->impedimentos;
+        $sum->save();
+        
+        return redirect('/visualizar');
 
         // return view('home');
     }

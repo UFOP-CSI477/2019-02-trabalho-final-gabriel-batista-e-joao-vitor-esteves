@@ -43,7 +43,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form method="post" action="{{ route('sumula.update',$s->id) }}">
+                <form method="post" action="{{ route('sumula.update',$s->id, $s->id) }}">
                     @csrf
                     @method('put')
                     <div class="modal-body">
@@ -75,7 +75,4 @@
     </div>
 </div>
 @endforeach
-
-
-
 @endsection
