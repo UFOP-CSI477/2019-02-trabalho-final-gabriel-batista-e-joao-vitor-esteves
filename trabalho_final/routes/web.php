@@ -26,6 +26,8 @@ Route::post('/registrar','EventoController@store')->middleware('auth');
 Route::get('/registrar', 'EventoController@create')->middleware('auth');
 Route::post('/jogos/{id}', 'SumulaController@store')->middleware('auth');
 Route::get('/visualizar', 'SumulaController@view')->middleware('auth');
+Route::post('/teste/{id}', 'SumulaController@update')->middleware('auth');
+
 
 Route::resource('sumula','SumulaController',['except'=>['post']])->parameters(['index'=>'id']);
 

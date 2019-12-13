@@ -47,10 +47,6 @@ class SumulaController extends Controller
         $sumulas->save();
         return redirect('/jogos');
     }
-    public function view(){
-        
-
-    }
 
     /**
      * Display the specified resource.
@@ -58,9 +54,11 @@ class SumulaController extends Controller
      * @param  \App\Sumula  $sumula
      * @return \Illuminate\Http\Response
      */
-    public function show(Sumula $sumula)
+    public function show(Request $request,$id)
     {
-        //
+        $evento = Evento::find($id);
+        $sumulas = Sumula::join('eventos','sumulas.idevento','=','eventos.id')->where('eventos.id','=',$evento->id)->get();
+        return view('visualizar',compact('sumulas'));
     }
 
     /**
@@ -84,15 +82,11 @@ class SumulaController extends Controller
 
     public function update(Request $request, Sumula $sumula)
     {
-        //dd($evento);
-        $sumulas = new Sumula;
-        $sumulas->placar = $request->placar;
-        $sumulas->melhor = $request->melhor;
-        $sumulas->faltas = $request->faltas;
-        $sumulas->impedimentos = $request->impedimentos;
+        $sum = Sumula::findOrFail($sumula->id);
+        dd($sum);
+        delete($sum);
 
-        $sumulas->idevento = $id;
-        $sumulas->save();
+        // return view('home');
     }
 
     /**

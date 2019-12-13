@@ -7,7 +7,7 @@
 @stop
 
 @section('content')
-<table class="table table-bordered">
+<table class="table table-bordered table-striped">
   <thead class="thead-dark" style="text-align: center;">
     <tr>
       <th>Casa</th>
@@ -25,43 +25,43 @@
         <td>{{$e->estadio}}</td>
         <td>{{$e->data}}</td>
         <td>
-         <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalPreenche">Preencher</button>
-          <div class="modal fade" id="modalPreenche" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalPreenche{{$e->id}}">Preencher</button>
+          <div class="modal fade" id="modalPreenche{{$e->id}}" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
               <div class="modal-dialog" role="document">
-                  <form method="post" action="{!! action ('SumulaController@store','id='.$e->id) !!}">
+                  <form method="post" action="{!! action('SumulaController@store',['id'=> $e->id]) !!}">
                       {{csrf_field()}}
 
                       <div class="modal-content">
                           <div class="modal-header">
-                              <h5 class="modal-title" id="TituloModalLongoExemplo">Preencher</h5>
+                              <h5 class="modal-title" id="TituloModalLongoExemplo">Preencher Dados</h5>
                               <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                                   <span aria-hidden="true">&times;</span>
                               </button>
                           </div> 
-                          <div class="modal-body">
+                            <div class="modal-body">
                               <div class="form-group">
                                   <label for="placar">Placar:</label>
-                                  <input type="text" name="placar" id="placar" class="form-control">
+                                  <input type="text" name="placar" id="placar" placeholder="Exemplo: 2x0" class="form-control">
                               </div>
 
                               <div class="form-group">
                                   <label for="melhor">Melhor Jogador:</label>
-                                  <input type="text" name="melhor" id="melhor" class="form-control">
+                                  <input type="text" name="melhor" id="melhor" placeholder="Insira o melhor jogador da partida" class="form-control">
                               </div>
 
                               <div class="form-group">
                                   <label for="faltas">Número de Faltas:</label>
-                                  <input type="number" name="faltas" id="faltas" class="form-control">
+                                  <input type="number" name="faltas" id="faltas" placeholder="Insira o número de faltas" class="form-control">
                               </div>
 
                               <div class="form-group">
                                   <label for="impedimentos">Número de Impedimentos:</label>
-                                  <input type="number" name="impedimentos" id="impedimentos" class="form-control">
+                                  <input type="number" name="impedimentos" id="impedimentos" placeholder="Insira o número de impedimentos" class="form-control">
                               </div>
                           </div>
                           <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
-                              <button type="submit" class="btn btn-primary">Confirmar</button>
+                              <button type="submit" class="btn btn-success">Confirmar</button>
                           </div>
                       </div>
                   </form>
@@ -69,7 +69,7 @@
           </div> 
       </td>
       <td>
-        <a href="/visualizar">Visualizar</a>
+        <a href="{{ route('sumula.show',$e->id) }}" class="btn btn-dark">Visualizar</a>
       </td>
       </tr>
     @endforeach

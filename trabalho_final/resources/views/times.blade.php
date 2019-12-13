@@ -9,8 +9,8 @@
 
 @section('content')
 
-<table class="table table-bordered">
-  <thead class="thead-dark">
+<table class="table table-bordered table-striped">
+  <thead class="thead-dark" style="text-align: center;">
     <tr>
       <th>Nome</th>
       <th>Estádio</th>
