@@ -83,14 +83,13 @@ class SumulaController extends Controller
     public function update(Request $request, $id)
     {
         $sum = Sumula::findOrFail($id);
-        dd($sum);
         $sum->placar = $request->placar;
         $sum->melhor = $request->melhor;
         $sum->faltas = $request->faltas;
         $sum->impedimentos = $request->impedimentos;
         $sum->save();
         
-        return redirect('/visualizar');
+        return redirect('/jogos');
 
         // return view('home');
     }
