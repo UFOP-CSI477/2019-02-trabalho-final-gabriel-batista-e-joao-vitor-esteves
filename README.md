@@ -29,27 +29,7 @@
 
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Telas
-<!-- 
-  #### Times
-  ![Times](/Telas/Tela 1.png)
-
-  #### Cadastro de times
-  ![Cadastro de times](/Telas/Tela 2.png)
-
-  #### Registro de jogos
-  ![Registro de times](/Telas/Tela 3.png)
-
-  #### Jogos
-  ![Jogos](/Telas/Tela 4.png)
-
-  #### Preenchimento dos dados
-  ![Preenchimento dos dados](/Telas/Tela 5.png)
-
-  #### Dados
-  ![Dados](/Telas/Tela 6.png)
-
-  #### Edição dos dados
-  ![Edição dos dados](/Telas/Tela 7.png) -->
+	Pasta telas no Github.
 
 ### 5. Referências
 
