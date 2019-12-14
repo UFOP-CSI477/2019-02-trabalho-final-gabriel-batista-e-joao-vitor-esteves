@@ -29,7 +29,8 @@
 
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Telas
-	Pasta telas no Github.
+
+  Pasta telas no Github.
 
 ### 5. Referências
 
