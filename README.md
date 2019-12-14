@@ -28,9 +28,28 @@
   Neste trabalho não serão considerados outros bancos de dados além do banco de dados da própria plataforma web.
 
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
-### 4. Protótipo
+### 4. Telas
 
-  Protótipos para as páginas (descrever quais páginas) foram elaborados, e podem ser encontrados em...
+  #### Times
+  ![Times](/Telas/Tela 1.png)
+
+  #### Cadastro de times
+  ![Cadastro de times](/Telas/Tela 2.png)
+
+  #### Registro de jogos
+  ![Registro de times](/Telas/Tela 3.png)
+
+  #### Jogos
+  ![Jogos](/Telas/Tela 4.png)
+
+  #### Preenchimento dos dados
+  ![Preenchimento dos dados](/Telas/Tela 5.png)
+
+  #### Dados
+  ![Dados](/Telas/Tela 6.png)
+
+  #### Edição dos dados
+  ![Edição dos dados](/Telas/Tela 7.png)
 
 ### 5. Referências
 
