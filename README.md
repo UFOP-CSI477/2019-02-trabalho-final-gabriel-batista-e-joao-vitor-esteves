@@ -29,7 +29,7 @@
 
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Telas
-
+<!-- 
   #### Times
   ![Times](/Telas/Tela 1.png)
 
@@ -49,7 +49,7 @@
   ![Dados](/Telas/Tela 6.png)
 
   #### Edição dos dados
-  ![Edição dos dados](/Telas/Tela 7.png)
+  ![Edição dos dados](/Telas/Tela 7.png) -->
 
 ### 5. Referências
 
